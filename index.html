@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Heart School - Robotics Club</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-icon">🤖</span>
+                <span>Happy Heart Robotics</span>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link" onclick="scrollToSection(event)">Home</a>
+                <a href="#about" class="nav-link" onclick="scrollToSection(event)">About</a>
+                <a href="#gallery" class="nav-link" onclick="scrollToSection(event)">Gallery</a>
+                <a href="#videos" class="nav-link" onclick="scrollToSection(event)">Videos</a>
+                <a href="#projects" class="nav-link" onclick="scrollToSection(event)">Projects</a>
+                <a href="#achievements" class="nav-link" onclick="scrollToSection(event)">Achievements</a>
+                <a href="#contact" class="nav-link" onclick="scrollToSection(event)">Contact</a>
+            </div>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="nav-extras">
+                <button class="theme-toggle" id="themeToggle" title="Toggle theme">🌙</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-background"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Welcome to Happy Heart School</h1>
+            <p class="hero-subtitle">Excellence in Robotics & STEM Education</p>
+            <p class="hero-description">Empowering students through innovative robotics, coding, and engineering excellence</p>
+            <button class="cta-button" onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'})">Explore Our Journey</button>
+        </div>
+    </section>
+
+    <!-- School Info Bar -->
+    <section class="school-info-bar">
+        <div class="info-container">
+            <div class="info-item">
+                <span class="info-icon">📍</span>
+                <div>
+                    <h3>Location</h3>
+                    <p>4 Uranus Street, Dome Pillar 2, Ga-East, Ghana</p>
+                </div>
+            </div>
+            <div class="info-item">
+                <span class="info-icon">📞</span>
+                <div>
+                    <h3>Contact</h3>
+                    <p>0554414948</p>
+                </div>
+            </div>
+            <div class="info-item">
+                <span class="info-icon">✉️</span>
+                <div>
+                    <h3>Email</h3>
+                    <p>admin@happyheart.edu.gh</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Club Activities Section -->
+    <section class="club-activities-section">
+        <div class="section-header">
+            <h2>🎉 Club Activities Schedule</h2>
+            <p>Join us for exciting club meetings every week!</p>
+        </div>
+        
+        <div class="activities-grid">
+            <div class="activity-card">
+                <div class="activity-day">Tuesday</div>
+                <div class="activity-icon">🤖</div>
+                <h3>Robotics Club</h3>
+                <p class="activity-time">⏰ 3:00 PM - 4:00 PM</p>
+                <p class="activity-instructor">👨‍🏫 Instructor: Mr Benedict Emekor Babanawo</p>
+                <p class="activity-desc">Learn programming, circuit design, and build amazing robots!</p>
+            </div>
+
+            <div class="activity-card">
+                <div class="activity-day">Wednesday</div>
+                <div class="activity-icon">🇨🇳</div>
+                <h3>Chinese Club</h3>
+                <p class="activity-time">⏰ 3:00 PM - 4:00 PM</p>
+                <p class="activity-instructor">👩‍🏫 Instructor: Madam Angela</p>
+                <p class="activity-desc">Explore the beautiful Chinese language and culture!</p>
+            </div>
+
+            <div class="activity-card">
+                <div class="activity-day">Thursday</div>
+                <div class="activity-icon">🎵</div>
+                <h3>Music Club</h3>
+                <p class="activity-time">⏰ 3:00 PM - 4:00 PM</p>
+                <p class="activity-instructor">👨‍🎓 Various Instructors</p>
+                <p class="activity-desc">Create harmony and discover your musical talent!</p>
+            </div>
+
+            <div class="activity-card">
+                <div class="activity-day">Friday</div>
+                <div class="activity-icon">🇫🇷</div>
+                <h3>French Club</h3>
+                <p class="activity-time">⏰ 3:00 PM - 4:00 PM</p>
+                <p class="activity-instructor">👨‍🏫 Instructor: Mr Seble</p>
+                <p class="activity-desc">Master the art of the French language and culture!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="section-header">
+            <h2>Meet Our Team</h2>
+            <p>Dedicated educators shaping the future of robotics</p>
+        </div>
+        
+        <div class="team-grid">
+            <!-- CEO Card -->
+            <div class="team-card">
+                <div class="card-icon">👔</div>
+                <h3>Mr. Asante</h3>
+                <p class="card-title">School CEO</p>
+                <p class="card-bio">Visionary leader committed to integrating cutting-edge technology and STEM education into our curriculum.</p>
+                <div class="card-contacts">
+                    <a href="tel:020850007">📱 020850007</a>
+                    <a href="mailto:aizikus1@gmail.com">📧 aizikus1@gmail.com</a>
+                </div>
+            </div>
+
+            <!-- Head Teacher Card -->
+            <div class="team-card">
+                <div class="card-icon">👨‍🏫</div>
+                <h3>Mr. Kennedy Bluie</h3>
+                <p class="card-title">Head Teacher</p>
+                <p class="card-bio">Passionate educator fostering academic excellence and holistic development in students.</p>
+                <div class="card-contacts">
+                    <a href="tel:0244107549">📱 0244107549</a>
+                    <a href="mailto:kennedybluie@gmail.com">📧 kennedybluie@gmail.com</a>
+                </div>
+            </div>
+
+            <!-- Robotics Teacher Card -->
+            <div class="team-card">
+                <div class="card-icon">🔧</div>
+                <h3>Benedict Emekor Babanawo</h3>
+                <p class="card-title">Robotics Instructor</p>
+                <p class="card-bio">Expert roboticist mentoring students in programming, engineering design, and innovation.</p>
+                <div class="card-contacts">
+                    <a href="tel:0534114494">📱 0534114494</a>
+                    <a href="mailto:benelinkz@gmail.com">📧 benelinkz@gmail.com</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Statistics Section -->
+        <div class="statistics-section">
+            <div class="stat-card">
+                <h3 class="stat-number" data-target="500">0</h3>
+                <p>Students Trained</p>
+            </div>
+            <div class="stat-card">
+                <h3 class="stat-number" data-target="45">0</h3>
+                <p>Robotics Projects</p>
+            </div>
+            <div class="stat-card">
+                <h3 class="stat-number" data-target="12">0</h3>
+                <p>Competitions Won</p>
+            </div>
+            <div class="stat-card">
+                <h3 class="stat-number" data-target="8">0</h3>
+                <p>Years of Excellence</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section" id="gallery">
+        <div class="section-header">
+            <h2>Project Gallery</h2>
+            <p>Showcasing our robotics projects and innovations</p>
+        </div>
+
+        <!-- Gallery Filter -->
+        <div class="gallery-filter">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="line">Line Tracking</button>
+            <button class="filter-btn" data-filter="smart">Smart House</button>
+            <button class="filter-btn" data-filter="cutebot">CuteBot</button>
+            <button class="filter-btn" data-filter="kits">Kits</button>
+            <button class="filter-btn" data-filter="misc">Misc</button>
+        </div>
+
+        <!-- Gallery Grid -->
+        <div class="gallery-grid" id="galleryGrid">
+            <!-- Gallery items will be dynamically inserted here -->
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <button class="lightbox-close">&times;</button>
+            <button class="lightbox-prev">&#10094;</button>
+            <img class="lightbox-image" src="" alt="">
+            <div class="lightbox-info">
+                <h3 class="lightbox-title"></h3>
+                <p class="lightbox-desc"></p>
+            </div>
+            <button class="lightbox-next">&#10095;</button>
+        </div>
+    </div>
+
+    <!-- Videos Section -->
+    <section class="videos-section" id="videos">
+        <div class="section-header">
+            <h2>Featured Videos</h2>
+            <p>Watch our robotics projects in action</p>
+        </div>
+
+        <div class="videos-grid" id="videosGrid">
+            <!-- Video cards will be dynamically inserted here -->
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects-section" id="projects">
+        <div class="section-header">
+            <h2>Our Projects</h2>
+            <p>Innovation and engineering excellence</p>
+        </div>
+
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-icon">🤖</div>
+                <h3>Cutebot Line Tracking</h3>
+                <p>Advanced line-following robot with IR sensors and adaptive steering control</p>
+                <span class="project-badge">Computer Vision</span>
+            </div>
+
+            <div class="project-card">
+                <div class="project-icon">🏠</div>
+                <h3>Smart House Automation</h3>
+                <p>IoT-enabled smart home with sensor monitoring and robotic device interactions</p>
+                <span class="project-badge">IoT & Automation</span>
+            </div>
+
+            <div class="project-card">
+                <div class="project-icon">🦐</div>
+                <h3>Bio-Inspired Robotics</h3>
+                <p>Mechanical shrimp showcasing organic motion and hydraulic-style actuation</p>
+                <span class="project-badge">Biomimetics</span>
+            </div>
+
+            <div class="project-card">
+                <div class="project-icon">🚀</div>
+                <h3>Obstacle Avoidance</h3>
+                <p>Intelligent navigation with sensor fusion and dynamic path replanning</p>
+                <span class="project-badge">AI & Sensors</span>
+            </div>
+
+            <div class="project-card">
+                <div class="project-icon">⚙️</div>
+                <h3>Mechanical Design</h3>
+                <p>Engineering principles applied to robotics construction and optimization</p>
+                <span class="project-badge">Mechanics</span>
+            </div>
+
+            <div class="project-card">
+                <div class="project-icon">💻</div>
+                <h3>Programming & Control</h3>
+                <p>MakeCode, Python, and advanced control algorithms for robot behavior</p>
+                <span class="project-badge">Software</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section class="achievements-section" id="achievements">
+        <div class="section-header">
+            <h2>Student Impact Stories</h2>
+            <p>How our projects have transformed students' lives and skills</p>
+        </div>
+
+        <div class="achievements-timeline">
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <h3>🤖 Line Tracking Project</h3>
+                    <p>Students learned advanced sensor integration and autonomous navigation. They developed problem-solving skills through debugging complex control algorithms, inspiring 15+ students to pursue engineering careers.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <h3>🏠 Smart House Automation</h3>
+                    <p>30+ students mastered IoT principles and home automation systems. Through this project, they gained practical experience in circuit design, sensor programming, and real-world application development that changed their understanding of technology.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <h3>🦐 Bio-Inspired Robotics</h3>
+                    <p>Students explored biomimetics and mechanical engineering through the mechanical shrimp project. This hands-on experience sparked creativity and helped them understand how nature inspires innovation in robotics.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <h3>💻 Programming & Control</h3>
+                    <p>Over 100 students have learned MakeCode, Python, and advanced control systems. Many have now become confident programmers and are mentoring younger students in coding and robotics.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <h3>⚙️ Engineering Design Mastery</h3>
+                    <p>Through mechanical projects and kit assembly, students developed critical engineering thinking. They learned to analyze problems, design solutions, and iterate designs—skills applicable to any field.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <h3>🎓 Confidence & Leadership</h3>
+                    <p>Most importantly, our students have grown in confidence and leadership. They've learned to work in teams, present their ideas, and inspire their peers. Many are now peer educators and mentors in the robotics club!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="section-header">
+            <h2>Get In Touch</h2>
+            <p>Connect with us for inquiries and registration</p>
+        </div>
+
+        <div class="contact-content">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <h3>📍 Address</h3>
+                    <p>4 Uranus Street<br>Dome Pillar 2, Ga-East<br>GE-324-7377, Ghana</p>
+                </div>
+
+                <div class="contact-item">
+                    <h3>📞 School Administration</h3>
+                    <p><a href="tel:0554414948">0554414948</a></p>
+                </div>
+
+                <div class="contact-item">
+                    <h3>📧 Email</h3>
+                    <p><a href="mailto:admin@happyheart.edu.gh">admin@happyheart.edu.gh</a></p>
+                </div>
+
+                <div class="contact-item">
+                    <h3>💬 Quick Chat</h3>
+                    <p>
+                        <a href="https://wa.me/233534114494" class="whatsapp-btn" target="_blank">
+                            💬 WhatsApp Us
+                        </a>
+                    </p>
+                </div>
+
+                <div class="contact-item">
+                    <h3>🤖 Robotics Instructor</h3>
+                    <p><strong>Mr. Benedict Emekor Babanawo</strong></p>
+                    <p><a href="tel:0534114494">📱 0534114494</a></p>
+                    <p><a href="mailto:benelinkz@gmail.com">📧 benelinkz@gmail.com</a></p>
+                </div>
+
+                <div class="contact-item">
+                    <h3>🌍 Subject Teachers</h3>
+                    <div class="teachers-list">
+                        <p><strong>French Teacher:</strong> Mr Seble - <a href="tel:02545940065">02545940065</a></p>
+                        <p><strong>Social Studies:</strong> Sir Addisson - <a href="tel:0201165433">0201165433</a></p>
+                        <p><strong>Programming/Computing:</strong> Sir Daniel Danso - <a href="tel:0559564852">0559564852</a></p>
+                        <p><strong>Science:</strong> Mr. Owusu Ansah - <a href="tel:0540661798">0540661798</a></p>
+                        <p><strong>Chinese:</strong> Madam Angela - <a href="tel:0541060211">0541060211</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <form class="contact-form" id="contactForm">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit" class="form-submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Happy Heart School Robotics Club. All rights reserved.</p>
+            <p>4 Uranus Street, Dome Pillar 2, Ga-East | Empowering Future Innovators</p>
+            <div class="footer-developer">
+                <p><strong>Website Developed by:</strong> Benedict Emekor Babanawo</p>
+                <p>📱 <a href="tel:0534114494">0534114494</a> | 📧 <a href="mailto:benelinkz@gmail.com">benelinkz@gmail.com</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" title="Back to top">↑</button>
+    <!-- Fun Challenge Section for Kids -->
+    <div class=\"fun-challenge-popup\" id=\"funChallenge\" style=\"display: none;\">
+        <div class=\"challenge-content\">
+            <h2>🎮 Daily Robotics Challenge! 🎮</h2>
+            <p id=\"challengeText\"></p>
+            <button onclick=\"closeFunChallenge()\">Got it! 🚀</button>
+        </div>
+    </div>
+    <!-- Hidden gallery data -->
+    <script type="application/json" id="galleryData">
+    [
+        {"src": "line_tracking (2).jpeg", "title": "Line Tracking Robot Kit", "desc": "Futuristic compact line-tracking robot with infrared sensor array", "category": "line"},
+        {"src": "line_tracking (3).jpeg", "title": "Line Follower Prototype", "desc": "Autonomous line follower showcasing sensor modules", "category": "line"},
+        {"src": "line_tracking (4).jpeg", "title": "Chassis Close-up", "desc": "Detailed view of chassis and wiring for assembly", "category": "line"},
+        {"src": "line_tracking.jpeg", "title": "Assembled Line Tracker", "desc": "Top view of assembled kit ready for demonstrations", "category": "line"},
+        {"src": "line_tracking3235.png", "title": "Line Tracking Layout", "desc": "Component layout for building and upgrading", "category": "line"},
+        {"src": "acebot_smart_house.jpeg", "title": "AceBot Smart House", "desc": "Smart home robotics concept for interactive learning", "category": "smart"},
+        {"src": "acebot_smarthouse.jpeg", "title": "AceBot Scenes", "desc": "Multiple smart house scenes with automation", "category": "smart"},
+        {"src": "acebot_smarthouse2.jpeg", "title": "AceBot Integration", "desc": "Integration examples for control and automation", "category": "smart"},
+        {"src": "cute_bot_4.jpeg", "title": "CuteBot Model 4", "desc": "Advanced CuteBot educational robot", "category": "cutebot"},
+        {"src": "cutebot.jpeg", "title": "Cutebot Assembled", "desc": "Complete CuteBot ready for programming", "category": "cutebot"},
+        {"src": "cutebot_2.jpeg", "title": "CuteBot Variant", "desc": "CuteBot with alternative configuration", "category": "cutebot"},
+        {"src": "cutebot_3.jpeg", "title": "CuteBot Advanced", "desc": "CuteBot showcasing advanced features", "category": "cutebot"},
+        {"src": "bbc-microbit-go-kit.webp", "title": "BBC micro:bit Kit", "desc": "Beginner-friendly microcontroller kit", "category": "kits"},
+        {"src": "bbc_microbit (2).jpg", "title": "BBC micro:bit Close-up", "desc": "Detailed view of micro:bit board", "category": "kits"},
+        {"src": "bbc_microbit.jpg", "title": "BBC microbit Board", "desc": "BBC microbit microcontroller", "category": "kits"},
+        {"src": "nezha_inventor_kit.jpeg", "title": "Nezha Inventor Kit", "desc": "Powerful robotics platform with expandable sensors", "category": "kits"},
+        {"src": "mechanical_shrimp (2).jpeg", "title": "Mechanical Shrimp", "desc": "Bio-mimetic robotics with organic motion", "category": "misc"},
+        {"src": "mechanical_shrimp (3).jpeg", "title": "Shrimp Design", "desc": "Mechanical shrimp engineering showcase", "category": "misc"},
+        {"src": "science_kit10.jpg", "title": "Science Kit", "desc": "Educational science experimentation kit", "category": "misc"},
+        {"src": "robotic_kits.jpeg", "title": "Robotic Kits Collection", "desc": "Various robotics kits for learning", "category": "kits"}
+    ]
+    </script>
+
+    <!-- Hidden video data -->
+    <script type="application/json" id="videosData">
+    [
+        {"src": "cute_bot_2.mp4", "title": "CuteBot Showcase", "desc": "Comprehensive CuteBot features and capabilities demonstration"},
+        {"src": "smart_house.mp4", "title": "Smart House Demonstration", "desc": "Complete smart house workflow with sensor alerts and automation"},
+        {"src": "line_tracking_video.mp4", "title": "Line Following - Core Run", "desc": "Precision line-tracking with sensor fusion and adaptive steering"},
+        {"src": "line_tracking_video_1.mp4", "title": "Line Following - Challenge Course", "desc": "Advanced course with sharper turns and precise navigation"},
+        {"src": "line_tracking_video_2.mp4", "title": "Line Following - Adaptive Run", "desc": "Adaptive thresholding with surface variation handling"},
+        {"src": "mechanical_shrimp_video.mp4", "title": "Bio-Inspired Mechanical Shrimp", "desc": "Organic motion and hydraulic-style actuation showcase"},
+        {"src": "obstacle avoidance_video_7.mp4", "title": "Obstacle Avoidance Demo", "desc": "Advanced sensor fusion and collision recovery"},
+        {"src": "science_kit_video.mp4", "title": "DEXT Science Set", "desc": "Walking robot simulation with modular design"}
+    ]
+    </script>
+
+    <script src="script.js"></script>
+</body>
+</html>
